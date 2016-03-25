@@ -77,6 +77,7 @@ public class WebFragment extends Fragment implements
             @Override
             public void handle(String data, WVJBResponseCallback callback) {
                 Log.d("share info from js : ", data);
+                callback.callback("share success");
             }
         });
 
